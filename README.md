@@ -1,5 +1,20 @@
-# Vue 3 + Vite
+#Objetivo principal: 
+criar uma interface web para nutricionistas, capaz de listar pacientes, exibir detalhes de cada paciente (incluindo histórico de planos alimentares), permitir criar e editar planos em um modal, mostrar indicadores de desempenho (KPIs) dinâmicos e oferecer um modo claro/escuro com persistência.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Stack escolhida:
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Front-end: Vue 3 (Composition API)
+
+Componentes visuais: inicialmente Kendo UI, depois removido para usar HTML nativo + Tailwind
+
+Estilização: Tailwind CSS (com setup via PostCSS)
+
+Roteamento: Vue Router
+
+Mock de API: arquivos JavaScript simulando retorno de dados de pacientes e planos
+
+Deploy: Vercel
+
+Testes unitários: Jest + Vue Test Utils
+
+Controle de estado: apenas Composition API e props/refs reativas.
