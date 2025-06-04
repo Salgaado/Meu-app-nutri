@@ -13,7 +13,7 @@
         class="flex justify-between items-center bg-white shadow p-4 rounded dark:bg-gray-800 transition-colors"
       >
         <div>
-          <!-- Exemplo: link para detalhe -->
+  
           <router-link
             :to="`/pacientes/${paciente.id}`"
             class="font-medium dark:text-gray-200 hover:underline"
@@ -52,7 +52,6 @@ onMounted(async () => {
 });
 
 const editar = (id) => {
-  // Por ora, só exibe alerta
   alert(`Editar paciente #${id}`);
 };
 
@@ -69,5 +68,5 @@ const excluir = async (id) => {
 </script>
 
 <style scoped>
-/* Sem CSS extra: usamos Tailwind */
+
 </style>

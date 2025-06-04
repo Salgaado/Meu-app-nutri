@@ -65,5 +65,5 @@ const formatValor = (nome, valor) => {
 </script>
 
 <style scoped>
-/* Tudo via Tailwind/dark:… */
+
 </style>

@@ -2,8 +2,7 @@
 <template>
   <div
     class="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100
-           flex flex-col items-center justify-center space-y-4"
-  >
+    flex flex-col items-center justify-center space-y-4">
     <h1 class="text-3xl">Teste de Modo</h1>
 
     <p>O fundo deve ficar claro ou escuro:</p>
@@ -12,7 +11,6 @@
       Este card muda conforme <code>class="dark"</code> em <code>&lt;html&gt;</code>.
     </p>
 
-    <!-- Botão simples, sem nada sobrepondo -->
     <button
       @click="toggle"
       class="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700 text-white transition-colors"
@@ -23,10 +21,9 @@
 </template>
 
 <script setup>
-// Vamos alternar apenas a classe "dark" em <html>
 const html = document.documentElement;
 
-// Mantemos um reativo apenas para refletir no console o estado atual
+
 import { ref } from "vue";
 const isDark = ref(html.classList.contains("dark"));
 
@@ -42,5 +39,4 @@ function toggle() {
 </script>
 
 <style>
-/* Sem estilos adicionais; todo styling vem de Tailwind */
 </style>

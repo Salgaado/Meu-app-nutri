@@ -184,5 +184,4 @@ const onEditar = (plano) => {
 </script>
 
 <style scoped>
-/* Tudo via Tailwind/dark:… */
 </style>

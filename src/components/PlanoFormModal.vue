@@ -130,5 +130,4 @@ const onSave = async () => {
 </script>
 
 <style scoped>
-/* Tudo via Tailwind/dark:… */
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen bg-gray-100 dark:bg-gray-900 transition-colors">
-    <!-- Header -->
     <header
       class="bg-white dark:bg-gray-800 shadow p-4 flex justify-between items-center transition-colors"
     >
@@ -8,7 +7,6 @@
         Sistema Nutricionista
       </h1>
 
-      <!-- Botão de toggle -->
       <button
         @click="toggleTheme"
         class="flex items-center space-x-2 text-gray-600 dark:text-gray-200"
@@ -19,7 +17,6 @@
       </button>
     </header>
 
-    <!-- Conteúdo das rotas -->
     <router-view />
   </div>
 </template>

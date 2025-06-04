@@ -7,7 +7,6 @@
       Paciente não encontrado.
     </div>
     <div v-else>
-      <!-- Card de dados -->
       <div
         class="bg-white dark:bg-gray-800 shadow p-6 rounded mb-6 transition-colors"
       >
@@ -26,10 +25,9 @@
         </p>
       </div>
 
-      <!-- KPI Cards -->
+
       <KpiCards :pacienteId="paciente.id" />
 
-      <!-- Histórico de planos -->
       <div class="mt-6">
         <PlanoList
           :pacienteId="paciente.id"
@@ -39,7 +37,6 @@
         />
       </div>
 
-      <!-- Botão voltar -->
       <div class="mt-6">
         <router-link
           to="/"
@@ -96,7 +93,7 @@ onMounted(async () => {
   loading.value = false;
 });
 
-// Modal state
+
 const mostrarModal = ref(false);
 const modoModal = ref("create");
 const planoAtual = ref(null);
@@ -122,9 +119,7 @@ const onPlanoSalvo = () => {
 </script>
 
 <style scoped>
-
 .max-w-xl {
   max-width: 40rem;
 }
-
 </style>

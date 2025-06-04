@@ -9,5 +9,5 @@ import PacienteList from "../components/PacienteList.vue";
 </script>
 
 <style>
-/* Sem CSS extra */
+
 </style>
